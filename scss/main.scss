@@ -1,6 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
 $primary-color: #0f0f0f;
 
 body {
   background: $primary-color;
   color: #e6e6e6;
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-weight: 400;
+
+  &.lg-heading {
+    font-size: 5em;
+    font-family: "Kanit", sans-serif;
+    color: #fad586;
+  }
+  &.sm-heading {
+    font-size: 2em;
+    font-weight: 200;
+  }
+  span {
+    color: #fad586;
+  }
 }

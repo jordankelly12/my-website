@@ -1,3 +1,39 @@
+* {
+  box-sizing: border-box; }
+
 body {
   background: #0f0f0f;
-  color: #e6e6e6; }
+  color: #e6e6e6;
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-weight: 400; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading,
+  h4.lg-heading,
+  h5.lg-heading {
+    font-size: 5em;
+    font-family: "Kanit", sans-serif;
+    color: #fad586; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading,
+  h4.sm-heading,
+  h5.sm-heading {
+    font-size: 2em;
+    font-weight: 200; }
+  h1 span,
+  h2 span,
+  h3 span,
+  h4 span,
+  h5 span {
+    color: #fad586; }
