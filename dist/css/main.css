@@ -40,14 +40,14 @@ h5 {
   h5 span {
     color: #fad586; }
 
-#home {
+main#home {
   height: 80vh;
   background: url("../img/profile-hero.png") no-repeat center;
   background-size: cover;
   padding: 0 2%;
   display: flex; }
 
-#headings {
+main #headings {
   align-self: flex-end; }
 
 footer {

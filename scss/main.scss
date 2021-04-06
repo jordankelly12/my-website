@@ -2,10 +2,7 @@
   border: 1px #fff solid;
 }
 
-// Variables
-$primary-color: #0f0f0f;
-$secondary-color: #fad586;
-$tertiary-color: #e6e6e6;
+@import "config";
 
 // General Styles
 * {
@@ -42,17 +39,21 @@ h5 {
   }
 }
 
-// Home Page
-#home {
-  height: 80vh;
-  background: url("../img/profile-hero.png") no-repeat center;
-  background-size: cover;
-  padding: 0 2%;
-  display: flex;
+// Main
+main {
+  &#home {
+    height: 80vh;
+    background: $hero-image no-repeat center;
+    background-size: cover;
+    padding: 0 2%;
+    display: flex;
+  }
+  #headings {
+    align-self: flex-end;
+  }
 }
-#headings {
-  align-self: flex-end;
-}
+
+// Footer
 footer {
   height: 20vh;
   background: $tertiary-color;
