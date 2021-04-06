@@ -9,7 +9,7 @@ body {
   color: #e6e6e6;
   height: 100%;
   margin: 0;
-  font-family: "Montserrat", sans-serif; }
+  font-family: 'Montserrat', sans-serif; }
 
 h1,
 h2,
@@ -24,7 +24,7 @@ h5 {
   h4.lg-heading,
   h5.lg-heading {
     font-size: 5em;
-    font-family: "Kanit", sans-serif;
+    font-family: 'Kanit', sans-serif;
     color: #fad586; }
   h1.sm-heading,
   h2.sm-heading,
@@ -63,7 +63,21 @@ footer {
       text-decoration: underline;
       color: #0f0f0f; }
   footer .home-link {
-    font-family: "Roboto Mono", monospace;
+    font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     font-size: 2.3rem;
     color: #0f0f0f; }
+
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 3%;
+  top: 3%;
+  cursor: pointer;
+  transition: all 1s ease-out; }
+  .menu-btn .btn-line {
+    width: 30px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #e6e6e6;
+    transition: all 1s ease-out; }
