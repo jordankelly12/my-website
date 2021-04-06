@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/profjjk/my-folio/issues"
   },
-  "homepage": "https://github.com/profjjk/my-folio#readme"
+  "homepage": "https://github.com/profjjk/my-folio#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
 }
