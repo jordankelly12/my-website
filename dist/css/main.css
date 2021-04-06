@@ -40,7 +40,7 @@ h5 {
   h5 span {
     color: #fad586; }
 
-main#home {
+main.home {
   height: 80vh;
   background: url("../img/profile-hero.png") no-repeat center;
   background-size: cover;
@@ -50,32 +50,33 @@ main#home {
 main #headings {
   align-self: flex-end; }
 
-footer {
+footer.home {
   height: 20vh;
   background: #e6e6e6;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center; }
-  footer a {
+  footer.home a {
     text-decoration: none; }
-    footer a:hover {
+    footer.home a:hover {
       text-decoration: underline;
       color: #0f0f0f; }
-  footer .home-link {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
-    font-size: 2.3rem;
-    color: #0f0f0f; }
 
-.menu-btn {
+footer .home-link {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 2.3rem;
+  color: #0f0f0f; }
+
+header.menu-btn {
   position: absolute;
   z-index: 3;
   right: 3%;
   top: 3%;
   cursor: pointer;
   transition: all 1s ease-out; }
-  .menu-btn .btn-line {
+  header.menu-btn .btn-line {
     width: 30px;
     height: 3px;
     margin: 0 0 5px 0;

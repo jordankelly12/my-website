@@ -42,7 +42,7 @@ h5 {
 
 // Main
 main {
-  &#home {
+  &.home {
     height: 80vh;
     background: $hero-image no-repeat center;
     background-size: cover;
@@ -56,20 +56,23 @@ main {
 
 // Footer
 footer {
-  height: 20vh;
-  background: $tertiary-color;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  align-items: center;
+  &.home {
+    height: 20vh;
+    background: $tertiary-color;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
 
-  a {
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-      color: $primary-color;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        color: $primary-color;
+      }
     }
   }
+  
   .home-link {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
@@ -78,19 +81,22 @@ footer {
   }
 }
 
-.menu-btn {
-  position: absolute;
-  z-index: 3;
-  right: 3%;
-  top: 3%;
-  cursor: pointer;
-  @include easeOut;
-
-  .btn-line {
-    width: 30px;
-    height: 3px;
-    margin: 0 0 5px 0;
-    background: $tertiary-color;
+header {
+  &.menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 3%;
+    top: 3%;
+    cursor: pointer;
     @include easeOut;
+
+    .btn-line {
+      width: 30px;
+      height: 3px;
+      margin: 0 0 5px 0;
+      background: $tertiary-color;
+      @include easeOut;
+    }
   }
 }
+
