@@ -7,14 +7,54 @@
   right: 3%;
   top: 3%;
   cursor: pointer;
-  transition: all 1s ease-out; }
+  transition: all .5s ease-out; }
+  .menu-btn .btn-line {
+    width: 30px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #e6e6e6;
+    transition: all .5s ease-out; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
 
-.btn-line {
-  width: 30px;
-  height: 3px;
-  margin: 0 0 5px 0;
-  background: #e6e6e6;
-  transition: all 1s ease-out; }
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden; }
+  .menu.show {
+    visibility: visible; }
+  .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background: #020202;
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    transition: all .5s ease-out; }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu .nav-item .nav-link {
+    text-decoration: none;
+    font-size: 2em;
+    color: #e6e6e6;
+    line-height: 3em; }
+    .menu .nav-item .nav-link:hover {
+      color: #fad586;
+      transition: all .5s ease-out; }
 
 * {
   box-sizing: border-box; }
@@ -22,7 +62,7 @@
 body {
   background: #0f0f0f;
   color: #e6e6e6;
-  height: 100%;
+  height: 100vh;
   margin: 0;
   font-family: 'Montserrat', sans-serif; }
 
@@ -55,6 +95,10 @@ h5 {
   h5 span {
     color: #fad586; }
 
+header {
+  margin: 0;
+  padding: 0; }
+
 main.home {
   height: 80vh;
   background: url("../img/profile-hero.png") no-repeat center;
@@ -64,6 +108,9 @@ main.home {
 
 main #headings {
   align-self: flex-end; }
+
+main.contact {
+  height: 100vh; }
 
 footer.home {
   height: 20vh;

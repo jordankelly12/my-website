@@ -13,4 +13,61 @@
     background: $tertiary-color;
     @include easeOut;
   }
+
+  &.close {
+    transform: rotate(180deg);
+    .btn-line {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px)
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px)
+      }
+    }
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+
+  &.show {
+    visibility: visible;
+  }
+  &-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background: darken($primary-color, 5);
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    @include easeOut;
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .nav-item {
+    .nav-link {
+      text-decoration: none;
+      font-size: 2em;
+      color: $tertiary-color;
+      line-height: 3em;
+      &:hover {
+        color: $secondary-color;
+        @include easeOut;
+      }
+    }
+  }
 }
