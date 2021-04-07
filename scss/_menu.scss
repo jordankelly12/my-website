@@ -1,0 +1,16 @@
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 3%;
+  top: 3%;
+  cursor: pointer;
+  @include easeOut;
+
+  .btn-line {
+    width: 30px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: $tertiary-color;
+    @include easeOut;
+  }
+}

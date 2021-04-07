@@ -1,6 +1,21 @@
 .border {
   border: 1px #fff solid; }
 
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 3%;
+  top: 3%;
+  cursor: pointer;
+  transition: all 1s ease-out; }
+
+.btn-line {
+  width: 30px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: #e6e6e6;
+  transition: all 1s ease-out; }
+
 * {
   box-sizing: border-box; }
 
@@ -68,17 +83,3 @@ footer .home-link {
   font-weight: 400;
   font-size: 2.3rem;
   color: #0f0f0f; }
-
-header.menu-btn {
-  position: absolute;
-  z-index: 3;
-  right: 3%;
-  top: 3%;
-  cursor: pointer;
-  transition: all 1s ease-out; }
-  header.menu-btn .btn-line {
-    width: 30px;
-    height: 3px;
-    margin: 0 0 5px 0;
-    background: #e6e6e6;
-    transition: all 1s ease-out; }

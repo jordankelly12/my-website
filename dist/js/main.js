@@ -1,14 +1,11 @@
 // DOM Selectors
 const menu = document.querySelector('.menu');
-const menuBtn = document.querySelector('.btn-menu');
+const menuBtn = document.querySelector('.menu-btn');
 const menuNav = document.querySelector('.menu-nav');
-const navItem = document.querySelectorAll('.nav-items');
+const navItems = document.querySelectorAll('.nav-item');
 
-// Event Listeners
+// Functions
 let showMenu = false;
-
-menuBtn.addEventListener('click', toggleMenu)
-
 const toggleMenu = () => {
   if (!showMenu) {
     menuBtn.classList.add('close');
@@ -24,3 +21,7 @@ const toggleMenu = () => {
     showMenu = false;
   }
 }
+
+// Event Listeners
+menuBtn.addEventListener('click', toggleMenu)
+
