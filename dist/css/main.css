@@ -97,34 +97,19 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif; }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1.lg-heading, h4.lg-heading {
   margin: 0;
-  font-weight: 400; }
-  h1.lg-heading,
-  h2.lg-heading,
-  h3.lg-heading,
-  h4.lg-heading,
-  h5.lg-heading {
-    font-size: 5em;
-    font-family: 'Kanit', sans-serif;
-    color: #fad586; }
-  h1.sm-heading,
-  h2.sm-heading,
-  h3.sm-heading,
-  h4.sm-heading,
-  h5.sm-heading {
-    font-size: 2em;
-    font-weight: 200; }
-  h1 span,
-  h2 span,
-  h3 span,
-  h4 span,
-  h5 span {
-    color: #fad586; }
+  font-size: 5em;
+  font-family: 'Kanit', sans-serif;
+  color: #fad586; }
+
+h1.sm-heading, h4.sm-heading {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 200; }
+
+h1 span, h4 span {
+  color: #fad586; }
 
 header {
   margin: 0;
@@ -158,7 +143,39 @@ main.contact {
 main.life {
   height: 100vh;
   background: url("../img/collage.jpg") no-repeat center;
-  background-size: cover; }
+  background-size: cover;
+  padding: 3%;
+  display: grid;
+  grid-template-rows: 65% 35%; }
+  main.life h3 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 100;
+    color: #fad586; }
+  main.life section#timeline {
+    display: grid;
+    grid-template-columns: 1fr 6fr; }
+    main.life section#timeline ul {
+      list-style-type: none;
+      padding: 0; }
+      main.life section#timeline ul li {
+        display: grid;
+        grid-template-columns: 10% 90%; }
+        main.life section#timeline ul li .time {
+          font-family: 'Roboto Mono', monospace;
+          color: #fad586;
+          text-align: end;
+          padding-right: 25px; }
+      main.life section#timeline ul strong {
+        color: #fad586; }
+  main.life section#interests {
+    display: grid;
+    grid-template-columns: 1fr 6fr; }
+    main.life section#interests div {
+      padding: 2%; }
+    main.life section#interests p {
+      line-height: 1.5;
+      padding-right: 2%; }
 
 footer.home {
   height: 20vh;
@@ -172,9 +189,8 @@ footer.home {
     footer.home a:hover {
       text-decoration: underline;
       color: #0f0f0f; }
-
-footer .home-link {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
-  font-size: 2.3rem;
-  color: #0f0f0f; }
+  footer.home .home-link {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 2.3rem;
+    color: #0f0f0f; }

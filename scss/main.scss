@@ -19,19 +19,15 @@ body {
 }
 
 // Headings
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 0;
-  font-weight: 400;
+h1, h4 {
   &.lg-heading {
+    margin: 0;
     font-size: 5em;
     font-family: 'Kanit', sans-serif;
     color: $secondary-color;
   }
   &.sm-heading {
+    margin: 0;
     font-size: 2em;
     font-weight: 200;
   }
@@ -83,6 +79,49 @@ main {
     height: 100vh;
     background: $collage-image no-repeat center;
     background-size: cover;
+    padding: 3%;
+    display: grid;
+    grid-template-rows: 65% 35%;
+    h3 {
+      font-size: 2em;
+      text-align: center;
+      font-weight: 100;
+      color: $secondary-color;
+    }
+    section {
+      &#timeline {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        ul {
+          list-style-type: none;
+          padding: 0;
+          li {
+            display: grid;
+            grid-template-columns: 10% 90%;
+            .time {
+              font-family: 'Roboto Mono', monospace;
+              color: $secondary-color;
+              text-align: end;
+              padding-right: 25px;
+            }
+          }
+          strong {
+            color: $secondary-color;
+          }
+        }
+      }
+      &#interests {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        div {
+          padding: 2%;
+        }
+        p {
+          line-height: 1.5;
+          padding-right: 2%;
+        }
+      }
+    }
   }
 }
 
@@ -103,13 +142,12 @@ footer {
         color: $primary-color;
       }
     }
-  }
-  
-  .home-link {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
-    font-size: 2.3rem;
-    color: $primary-color;
+    .home-link {
+      font-family: 'Roboto Mono', monospace;
+      font-weight: 400;
+      font-size: 2.3rem;
+      color: $primary-color;
+    }
   }
 }
 
