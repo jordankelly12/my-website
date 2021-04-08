@@ -159,6 +159,33 @@ main.home {
         color: #fad586;
         transition: all .5s ease-out; }
 
+main.work {
+  height: 100vh;
+  display: grid;
+  grid-auto-rows: minmax(auto, auto);
+  margin: 5% 1%; }
+  main.work section {
+    display: grid;
+    grid-template-columns: 15% 85%; }
+    main.work section h3 {
+      font-size: 2em;
+      text-align: center;
+      font-weight: 100;
+      color: #fad586;
+      margin: 0; }
+    main.work section div#skills {
+      height: 15vh;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      padding: 0 3%; }
+      main.work section div#skills h5 {
+        margin: 0;
+        font-family: 'Roboto Mono', monospace;
+        color: #fad586; }
+    main.work section#projects {
+      display: grid;
+      grid-template-columns: 1fr 6fr; }
+
 main.contact {
   height: 100vh; }
 

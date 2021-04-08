@@ -3,6 +3,7 @@ const menu = document.querySelector('.menu');
 const menuBtn = document.querySelector('.menu-btn');
 const menuNav = document.querySelector('.menu-nav');
 const navItems = document.querySelectorAll('.nav-item');
+const skillsSection = document.querySelector('.skills');
 
 // Functions
 let showMenu = false;
@@ -24,3 +25,4 @@ const toggleMenu = () => {
 
 // Event Listeners
 menuBtn.addEventListener('click', toggleMenu)
+

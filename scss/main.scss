@@ -72,9 +72,46 @@ main {
     }
     
   }
+
+  &.work {
+    height: 100vh;
+    display: grid;
+    grid-auto-rows: minmax(auto, auto);
+    margin: 5% 1%;
+    section {
+      display: grid;
+      grid-template-columns: 15% 85%;
+      h3 {
+        font-size: 2em;
+        text-align: center;
+        font-weight: 100;
+        color: $secondary-color;
+        margin: 0;
+      }
+      div {
+        &#skills {
+          height: 15vh;
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          padding: 0 3%;
+          h5 {
+            margin: 0;
+            font-family: 'Roboto Mono', monospace;
+            color: $secondary-color;
+          }
+        }
+      }
+      &#projects {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+      }
+    }
+  }
+
   &.contact {
     height: 100vh;
   }
+
   &.life {
     height: 100vh;
     background: $collage-image no-repeat center;
