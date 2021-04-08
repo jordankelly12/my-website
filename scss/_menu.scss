@@ -51,7 +51,8 @@
     margin: 0;
     overflow: hidden;
     background: darken($primary-color, 5);
-    list-style: none;
+    list-style-type: none;
+    padding: 0;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
     &.show {

@@ -24,4 +24,3 @@ const toggleMenu = () => {
 
 // Event Listeners
 menuBtn.addEventListener('click', toggleMenu)
-

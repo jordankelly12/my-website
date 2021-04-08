@@ -4,6 +4,7 @@
 
 @import 'config';
 @import 'menu';
+@import 'mobile';
 
 // General Styles
 * {
@@ -25,7 +26,6 @@ h4,
 h5 {
   margin: 0;
   font-weight: 400;
-
   &.lg-heading {
     font-size: 5em;
     font-family: 'Kanit', sans-serif;
@@ -56,10 +56,25 @@ main {
     background: $hero-image no-repeat center;
     background-size: cover;
     padding: 0 2%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 75% 25%;
     #headings {
-      align-self: flex-end;
+      align-self: end;
     }
+    #social {
+      align-self: end;
+      justify-self: end;
+      margin-bottom: 25px;
+      a {
+        margin-left: 10px;
+        color: $tertiary-color;
+        &:hover {
+          color: $secondary-color;
+          @include easeOut;
+        }
+      }
+    }
+    
   }
   &.contact {
     height: 100vh;
