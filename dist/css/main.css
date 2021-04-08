@@ -59,6 +59,18 @@
     .menu .nav-item .nav-link.active {
       color: #fad586; }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  main.life section h3 {
+    margin-bottom: 0;
+    margin-top: 5%; }
+  main.life section#timeline {
+    grid-template-columns: 1fr !important; }
+    main.life section#timeline ul li {
+      grid-template-columns: 15% 85% !important;
+      padding-right: 5%; }
+  main.life section#interests {
+    grid-template-columns: 1fr !important; } }
+
 @media screen and (max-width: 768px) {
   header.home {
     visibility: visible !important; }
@@ -76,6 +88,16 @@
   main h1.sm-heading, main h4.sm-heading {
     font-size: 1.5em !important;
     text-align: center; }
+  main.life section h3 {
+    margin-bottom: 0;
+    margin-top: 5%; }
+  main.life section#timeline {
+    grid-template-columns: 1fr !important; }
+    main.life section#timeline ul li {
+      grid-template-columns: 15% 85% !important;
+      padding-right: 5%; }
+  main.life section#interests {
+    grid-template-columns: 1fr !important; }
   footer.home {
     display: none !important; } }
 
@@ -146,7 +168,7 @@ main.life {
   background-size: cover;
   padding: 3%;
   display: grid;
-  grid-template-rows: 65% 35%; }
+  grid-auto-rows: minmax(auto, auto); }
   main.life h3 {
     font-size: 2em;
     text-align: center;
@@ -160,7 +182,7 @@ main.life {
       padding: 0; }
       main.life section#timeline ul li {
         display: grid;
-        grid-template-columns: 10% 90%; }
+        grid-template-columns: 15% 85%; }
         main.life section#timeline ul li .time {
           font-family: 'Roboto Mono', monospace;
           color: #fad586;

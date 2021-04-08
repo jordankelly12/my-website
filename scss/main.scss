@@ -81,7 +81,7 @@ main {
     background-size: cover;
     padding: 3%;
     display: grid;
-    grid-template-rows: 65% 35%;
+    grid-auto-rows: minmax(auto, auto);
     h3 {
       font-size: 2em;
       text-align: center;
@@ -97,7 +97,7 @@ main {
           padding: 0;
           li {
             display: grid;
-            grid-template-columns: 10% 90%;
+            grid-template-columns: 15% 85%;
             .time {
               font-family: 'Roboto Mono', monospace;
               color: $secondary-color;
