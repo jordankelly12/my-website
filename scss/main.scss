@@ -44,6 +44,9 @@ h5 {
 header {
   margin: 0;
   padding: 0;
+  &.home {
+    visibility: hidden;
+  }
 }
 
 // Main
@@ -54,12 +57,17 @@ main {
     background-size: cover;
     padding: 0 2%;
     display: flex;
-  }
-  #headings {
-    align-self: flex-end;
+    #headings {
+      align-self: flex-end;
+    }
   }
   &.contact {
     height: 100vh;
+  }
+  &.life {
+    height: 100vh;
+    background: $collage-image no-repeat center;
+    background-size: cover;
   }
 }
 

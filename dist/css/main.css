@@ -55,6 +55,8 @@
     .menu .nav-item .nav-link:hover {
       color: #fad586;
       transition: all .5s ease-out; }
+    .menu .nav-item .nav-link.active {
+      color: #fad586; }
 
 * {
   box-sizing: border-box; }
@@ -98,6 +100,8 @@ h5 {
 header {
   margin: 0;
   padding: 0; }
+  header.home {
+    visibility: hidden; }
 
 main.home {
   height: 80vh;
@@ -105,12 +109,16 @@ main.home {
   background-size: cover;
   padding: 0 2%;
   display: flex; }
-
-main #headings {
-  align-self: flex-end; }
+  main.home #headings {
+    align-self: flex-end; }
 
 main.contact {
   height: 100vh; }
+
+main.life {
+  height: 100vh;
+  background: url("../img/collage.jpg") no-repeat center;
+  background-size: cover; }
 
 footer.home {
   height: 20vh;

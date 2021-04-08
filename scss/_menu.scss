@@ -68,6 +68,9 @@
         color: $secondary-color;
         @include easeOut;
       }
+      &.active {
+        color: $secondary-color;
+      }
     }
   }
 }
