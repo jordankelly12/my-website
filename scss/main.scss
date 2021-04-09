@@ -149,6 +149,10 @@ main {
 
   &.contact {
     height: 100vh;
+    img {
+      height: 250;
+      width: 250;
+    }
   }
 
   &.life {
@@ -215,6 +219,7 @@ footer {
       text-decoration: none;
       &:hover {
         text-decoration: underline;
+        text-underline-offset: 5px;
         color: $primary-color;
       }
     }

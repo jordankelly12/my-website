@@ -242,6 +242,9 @@ main.work {
 
 main.contact {
   height: 100vh; }
+  main.contact img {
+    height: 250;
+    width: 250; }
 
 main.life {
   height: 100vh;
@@ -291,6 +294,7 @@ footer.home {
     text-decoration: none; }
     footer.home a:hover {
       text-decoration: underline;
+      text-underline-offset: 5px;
       color: #0f0f0f; }
   footer.home .home-link {
     font-family: 'Roboto Mono', monospace;
