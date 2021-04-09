@@ -241,10 +241,30 @@ main.work {
         margin-left: 10%; }
 
 main.contact {
-  height: 100vh; }
+  height: 100vh;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
   main.contact img {
-    height: 250;
-    width: 250; }
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 10px solid #fad586;
+    margin: 20px auto; }
+  main.contact h1 {
+    text-align: center;
+    font-size: 3.5em; }
+  main.contact h3 {
+    text-align: center;
+    margin-bottom: 5px; }
+  main.contact div {
+    display: flex;
+    justify-content: center; }
+    main.contact div a {
+      margin: 0px 15px 20px 15px;
+      color: #fad586;
+      text-underline-offset: 3px; }
 
 main.life {
   height: 100vh;
