@@ -160,13 +160,13 @@ main.home {
         transition: all .5s ease-out; }
 
 main.work {
-  height: 100vh;
   display: grid;
   grid-auto-rows: minmax(auto, auto);
-  margin: 5% 1%; }
+  padding: 5% 1%; }
   main.work section {
     display: grid;
-    grid-template-columns: 15% 85%; }
+    grid-template-columns: 15% 85%;
+    margin-bottom: 5%; }
     main.work section h3 {
       font-size: 2em;
       text-align: center;
@@ -180,11 +180,41 @@ main.work {
       padding: 0 3%; }
       main.work section div#skills h5 {
         margin: 0;
-        font-family: 'Roboto Mono', monospace;
-        color: #fad586; }
-    main.work section#projects {
+        font-family: 'Roboto Mono', monospace; }
+    main.work section div#projects hr {
+      width: 85%;
+      border: 1px solid #fad586;
+      margin: 50px 0 25px 25px; }
+      main.work section div#projects hr:nth-child(1) {
+        margin-top: 0 !important; }
+    main.work section div#projects .row {
       display: grid;
-      grid-template-columns: 1fr 6fr; }
+      grid-template-columns: 75% 25%;
+      grid-auto-rows: minmax(auto, auto);
+      margin-bottom: 30px;
+      padding-left: 10px; }
+      main.work section div#projects .row h2 {
+        margin-top: 0; }
+      main.work section div#projects .row p {
+        padding-right: 5%;
+        line-height: 1.5; }
+      main.work section div#projects .row a {
+        margin: 5px 10px;
+        float: right;
+        color: #fad586;
+        text-decoration: none;
+        padding: 5px; }
+        main.work section div#projects .row a:hover {
+          background: #fad586;
+          color: #0f0f0f;
+          border-radius: 5px; }
+      main.work section div#projects .row img {
+        align-self: center;
+        max-height: 150px;
+        max-width: 150px;
+        object-fit: contain;
+        border-radius: 10px;
+        margin-left: 10%; }
 
 main.contact {
   height: 100vh; }

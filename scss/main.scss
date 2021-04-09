@@ -74,13 +74,13 @@ main {
   }
 
   &.work {
-    height: 100vh;
     display: grid;
     grid-auto-rows: minmax(auto, auto);
-    margin: 5% 1%;
+    padding: 5% 1%;
     section {
       display: grid;
       grid-template-columns: 15% 85%;
+      margin-bottom: 5%;
       h3 {
         font-size: 2em;
         text-align: center;
@@ -97,13 +97,52 @@ main {
           h5 {
             margin: 0;
             font-family: 'Roboto Mono', monospace;
-            color: $secondary-color;
           }
         }
-      }
-      &#projects {
-        display: grid;
-        grid-template-columns: 1fr 6fr;
+        &#projects {
+          hr {
+            width: 85%;
+            border: 1px solid $secondary-color;
+            margin: 50px 0 25px 25px;
+            &:nth-child(1) {
+              margin-top: 0 !important;
+            }
+          }
+          .row {
+            display: grid;
+            grid-template-columns: 75% 25%;
+            grid-auto-rows: minmax(auto, auto);
+            margin-bottom: 30px;
+            padding-left: 10px;
+            h2 {
+              margin-top: 0;
+            }
+            p {
+              padding-right: 5%;
+              line-height: 1.5;
+            }
+            a {
+              margin: 5px 10px;
+              float: right;
+              color: $secondary-color;
+              text-decoration: none;
+              padding: 5px;
+              &:hover {
+                background: $secondary-color;
+                color: $primary-color;
+                border-radius: 5px;
+              }
+            }
+            img {
+              align-self: center;
+              max-height: 150px;
+              max-width: 150px;
+              object-fit: contain;
+              border-radius: 10px;
+              margin-left: 10%;
+            }
+          }
+        }
       }
     }
   }
