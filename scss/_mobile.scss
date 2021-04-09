@@ -58,6 +58,7 @@
         text-align: center;
       }
     }
+
     &.life {
       section {
         h3 {
@@ -75,6 +76,37 @@
         }
         &#interests {
           grid-template-columns: 1fr !important;
+        }
+      }
+    }
+
+    &.work {
+      section {
+        grid-template-columns: 1fr !important;
+        h3 {
+          margin: 10% 0 5% 0 !important;
+        }
+        div {
+          &#skills {
+            grid-template-columns: repeat(3, 1fr) !important;
+            h5 {
+              text-align: center !important;
+            }
+          }
+          &#projects {
+            hr {
+              margin-right: 0 !important;
+              margin: 5% auto 5% auto !important;
+            }
+            .row {
+              grid-template-columns: 1fr !important;
+              padding: 0 5% !important;
+              justify-content: center;
+              img {
+                display: none;
+              }
+            }
+          }
         }
       }
     }
@@ -98,6 +130,14 @@
       }
       &.sm-heading {
         font-size: 1.3em !important;
+      }
+    }
+    &.life {
+      p {
+        padding-left: 10px !important;
+      }
+      .time {
+        text-align: start !important;
       }
     }
   }

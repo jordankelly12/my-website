@@ -98,6 +98,23 @@
       padding-right: 5%; }
   main.life section#interests {
     grid-template-columns: 1fr !important; }
+  main.work section {
+    grid-template-columns: 1fr !important; }
+    main.work section h3 {
+      margin: 10% 0 5% 0 !important; }
+    main.work section div#skills {
+      grid-template-columns: repeat(3, 1fr) !important; }
+      main.work section div#skills h5 {
+        text-align: center !important; }
+    main.work section div#projects hr {
+      margin-right: 0 !important;
+      margin: 5% auto 5% auto !important; }
+    main.work section div#projects .row {
+      grid-template-columns: 1fr !important;
+      padding: 0 5% !important;
+      justify-content: center; }
+      main.work section div#projects .row img {
+        display: none; }
   footer.home {
     display: none !important; } }
 
@@ -107,7 +124,11 @@
   main h1.lg-heading, main h4.lg-heading {
     font-size: 3.1em !important; }
   main h1.sm-heading, main h4.sm-heading {
-    font-size: 1.3em !important; } }
+    font-size: 1.3em !important; }
+  main.life p {
+    padding-left: 10px !important; }
+  main.life .time {
+    text-align: start !important; } }
 
 * {
   box-sizing: border-box; }

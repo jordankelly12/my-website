@@ -1,11 +1,11 @@
 // Navigation Menu
 // =======================================================
-// DOM Selectors
+// DOM Selectors.
 const menu = document.querySelector('.menu');
 const menuBtn = document.querySelector('.menu-btn');
 const menuNav = document.querySelector('.menu-nav');
 const navItems = document.querySelectorAll('.nav-item');
-// Function
+// Show/Hide Nav-Menu Toggle.
 let showMenu = false;
 const toggleMenu = () => {
   if (!showMenu) {
@@ -22,13 +22,13 @@ const toggleMenu = () => {
     showMenu = false;
   }
 }
-// Event Listener
+// Event Listener.
 menuBtn.addEventListener('click', toggleMenu)
 
 
 // Skills Section
 // =======================================================
-const skillList = ['JavaScript', 'Node.js', 'JQuery', 'OOP', 'HTML5', 'CSS3', 'MySQL', 'React.js', 'Express.js', 'Bootstrap CSS', 'Sass', 'Responsive Design', 'Handlebars', 'AJAX', 'JSON', 'APIs', 'Local Storage', 'Git', 'GitHub', 'MERN Stack'];
+const skillList = ['JavaScript', 'MySQL', 'OOP', 'HTML5', 'CSS3', 'MERN Stack', 'MongoDB', 'Express.js', 'React.js', 'Node.js', 'JQuery', 'Git', 'Handlebars', 'AJAX', 'JSON', 'APIs', 'Local Storage', 'Bootstrap CSS', 'Sass', 'Responsive Design',];
 const skillSection = document.getElementById('skills');
 
 for (let i = 0; i < skillList.length; i++) {
