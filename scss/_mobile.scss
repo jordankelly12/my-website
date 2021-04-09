@@ -91,6 +91,10 @@
             grid-template-columns: repeat(3, 1fr) !important;
             h5 {
               text-align: center !important;
+              &:nth-last-child(1) {
+                grid-column: 2/4 !important;
+                text-align: start !important;
+              }
             }
           }
           &#projects {

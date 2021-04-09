@@ -106,6 +106,9 @@
       grid-template-columns: repeat(3, 1fr) !important; }
       main.work section div#skills h5 {
         text-align: center !important; }
+        main.work section div#skills h5:nth-last-child(1) {
+          grid-column: 2/4 !important;
+          text-align: start !important; }
     main.work section div#projects hr {
       margin-right: 0 !important;
       margin: 5% auto 5% auto !important; }
