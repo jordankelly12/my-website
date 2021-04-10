@@ -120,15 +120,20 @@
 
 // Smartphones
 @include mediaSm {
+  .menu-btn {
+    right: 6% !important;
+  }
   main {
     #headings {
-      margin-bottom: 15%;
+      align-self: start !important;
+      margin-top: 35%;
     }
     h1, h4 {
       &.lg-heading {
         font-size: 3.1em !important;
       }
       &.sm-heading {
+        font-weight: 300;
         font-size: 1.3em !important;
       }
     }
