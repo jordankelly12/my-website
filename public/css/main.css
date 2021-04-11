@@ -247,7 +247,7 @@ main.work {
 
 main.contact {
   height: 100vh;
-  padding: 5%;
+  padding: 0 5%;
   display: flex;
   flex-direction: column;
   justify-content: center; }
