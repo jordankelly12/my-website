@@ -62,6 +62,7 @@ main {
         color: $tertiary-color;
         &:hover {
           color: $secondary-color;
+          cursor: pointer;
           @include easeOut;
         }
       }

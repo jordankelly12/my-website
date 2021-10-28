@@ -1,6 +1,6 @@
 // Skills Section
 // =======================================================
-const skillList = ['JavaScript', 'MySQL', 'OOP', 'HTML5', 'CSS3', 'MERN Stack', 'MongoDB', 'Express.js', 'React.js', 'Node.js', 'JQuery', 'Git', 'Handlebars', 'AJAX', 'JSON', 'APIs', 'Local Storage', 'Bootstrap CSS', 'Sass', 'Responsive Design',];
+const skillList = ['JavaScript', 'Java', 'Spring Boot Framework', 'MySQL', 'OOP', 'HTML5', 'CSS3', 'MERN Stack', 'MongoDB', 'Express.js', 'React.js', 'React Native', 'Node.js', 'JQuery', 'Git', 'Handlebars', 'REST APIs', 'Bootstrap', 'Sass', 'Responsive Design',];
 const skillSection = document.getElementById('skills');
 
 for (let i = 0; i < skillList.length; i++) {
@@ -16,6 +16,14 @@ for (let i = 0; i < skillList.length; i++) {
 const projects = [
   {
     id: 1,
+    title: "Metronics, Inc.",
+    description: "A CRM created for a real service company. Built using Java, React, and using a microservice architecture.",
+    image: "img/metronics.png",
+    github: "https://github.com/profjjk/metronics-microservice-build",
+    website: "https://github.com/profjjk/metronics-microservice-build"
+  },
+  {
+    id: 2,
     title: "My Job",
     description: "This is a full stack web application that empowers a user to better organize their job search. The user can create a unique profile, add job applications, track their status, and update with notes.",
     image: "img/my-job.png",
@@ -23,7 +31,7 @@ const projects = [
     website: "https://ucb-my-job.herokuapp.com/"
   },
   {
-    id: 2,
+    id: 3,
     title: "Game of Thrones Quiz",
     description: "This is a Game of Thrones themed quiz consisting of 20 questions and set to a timer. Wrong answers will decrease the timer. Correct answers will be scored and a percentage will display at the end. Player names and scores are stored for reference and can be called upon by clicking on the scoreboard.",
     image: "img/got-quiz.png",
@@ -31,7 +39,7 @@ const projects = [
     website: "https://game-of-thrones-quiz.herokuapp.com/"
   },
   {
-    id: 3,
+    id: 4,
     title: "President Shuffle",
     description: "This is a game built using React.js. Everytime time you click on an image the page will scramble their positions and you will need to click on a new image. If you click on the same image twice then it's GAME OVER.",
     image: "img/shuffle.png",
@@ -39,7 +47,7 @@ const projects = [
     website: "https://profjjk.github.io/president-shuffle/"
   },
   {
-    id: 4,
+    id: 5,
     title: "Get Fit",
     description: "This is a fitness and workout tracker that utilizes MongoDB and Mongoose.js to create a database of your workouts.",
     image: "img/workout.png",
@@ -47,7 +55,7 @@ const projects = [
     website: "https://jk-ucb-fitness-tracker.herokuapp.com/"
   },
   {
-    id: 5,
+    id: 6,
     title: "Bookish",
     description: "Bookish is a reading list application that allows you to keep a list of which books you have read, and it allows you to add new books that you want to read later.",
     image: "img/bookish.png",
@@ -55,7 +63,7 @@ const projects = [
     website: "https://bookish-reading-list.herokuapp.com/"
   },
   {
-    id: 6,
+    id: 7,
     title: "Weather Dashboard",
     description: "This is a weather dashboard that queries the OpenWeather API to return weather data for the current day and provide a 5-day forecast based on the user's search for a city.",
     image: "img/weather.png",
@@ -71,30 +79,34 @@ for (let i = 0; i < projects.length; i++) {
   const mainDiv = document.createElement('div');
   const linkDiv = document.createElement('div');
   const image = document.createElement('img');
-  const websiteLink = document.createElement('a');
+
+  // const websiteLink = document.createElement('a');
   const githubLink = document.createElement('a');
   const title = document.createElement('h2');
   const desc = document.createElement('p');
   const hr = document.createElement('hr');
+
   // Add attributes.
   row.classList.add('row');
   image.setAttribute('src', `${projects[i].image}`);
   image.setAttribute('alt', `${projects[i].title}`);
-  websiteLink.setAttribute('href', `${projects[i].website}`);
-  websiteLink.setAttribute('target', '_blank');
+  // websiteLink.setAttribute('href', `${projects[i].website}`);
+  // websiteLink.setAttribute('target', '_blank');
   githubLink.setAttribute('href', `${projects[i].github}`);
   githubLink.setAttribute('target', '_blank');
+
   // Create text nodes.
   let titleText = document.createTextNode(`${projects[i].title}`);
   let descText = document.createTextNode(`${projects[i].description}`);
-  let webText = document.createTextNode('Website');
+  // let webText = document.createTextNode('Website');
   let githubText = document.createTextNode('GitHub');
+
   // Assemble and append to section.
   title.appendChild(titleText);
   desc.appendChild(descText);
-  websiteLink.appendChild(webText);
+  // websiteLink.appendChild(webText);
   githubLink.appendChild(githubText);
-  linkDiv.appendChild(websiteLink);
+  // linkDiv.appendChild(websiteLink);
   linkDiv.appendChild(githubLink);
   mainDiv.appendChild(title);
   mainDiv.appendChild(desc);
