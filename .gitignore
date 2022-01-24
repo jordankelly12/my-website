@@ -1,8 +1,4 @@
 node_modules
 .DS_Store
-.firebase
-.firebaserc
-firebase.json
-notes.txt
 .idea
 .github

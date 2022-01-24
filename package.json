@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/profjjk/my-folio#readme",
   "dependencies": {
-    "firebase": "^9.1.3",
     "node-sass": "^5.0.0"
   }
 }
